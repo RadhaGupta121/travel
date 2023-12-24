@@ -9,7 +9,7 @@ var bodyParser=require('body-parser');
 const cookieParser = require('cookie-parser');
 app.use(bodyParser.json());
 app.use(cors({
-    origin:"https://new-travel-frontend.vercel.app",
+    origin:"https://new-travel-frontend.vercel.app","https://travelling-xi.vercel.app/login"
     credentials:true,
     methods: ["GET", "POST", "PUT", "DELETE"],
  } ))
