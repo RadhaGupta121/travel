@@ -22,8 +22,8 @@ DB_connection()
     app.get('/',(req,res)=>{
         res.send("this is listening")
     })
-   const upload = require('./middleware/multer');
-const ImageUpload = require('./utils/cloudinary');
+   const upload = require('../middleware/multer');
+const ImageUpload = require('../utils/cloudinary');
 
 app.post('/upload', upload.single('file'), async(req, res) => {
      const {path}=req.file;
